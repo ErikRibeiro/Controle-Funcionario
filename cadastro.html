@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <meta charset="utf-8">
+</head>
+<body>
+    <div class="container" style="width: 500px">
+    <form enctype="multipart/form-data" action="Upload.php" method="POST">
+            <input type="hidden" name="MAX_FILE_SIZE" value="100000000" />
+            Enviar esse arquivo: <input name="userfile" type="file" class="form-control" />
+            Nome: <input type="text" name="nome" class="form-control">
+            Telefone: <input type="phone" name="telefone" class="form-control">
+            Endereço: <input type="text" name="endereco" class="form-control">
+            Bairro: <input type="text" name="bairro" class="form-control">
+            Cidade: <input type="text" name="cidade" class="form-control">
+            UF: <select name="uf" class="form-control">
+                <option value="DF">DF</option>
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+            </select><br>
+            <input type="submit" value="Cadastrar" class="btn btn-sm btn-success"/>
+            <a href="index.php" class="btn btn-sm btn-primary">Voltar</a>
+    </form>
+    </div>
+</body>
+</html>
